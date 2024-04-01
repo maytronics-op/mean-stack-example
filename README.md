@@ -1,12 +1,16 @@
 # MEAN Stack Sample Application
 
-This is a simple CRUD application built using the MEAN (MongoDB, Express, Angular, Node.js) stack. You can also follow the step-by-step [tutorial](https://www.mongodb.com/languages/mean-stack-tutorial) for building this application.
+This is a simple CRUD application built using the MEAN stack (MongoDB, Express, Angular, Node.js).
+You can also follow the step-by-step [tutorial](https://www.mongodb.com/languages/mean-stack-tutorial) for building this application.
+
+The code source is: `https://github.com/mongodb-developer/mean-stack-example`.
 
 ![Demonstration of the web application](demo.gif)
 
 ## How To Run
 
-Set your [Atlas URI connection string](https://docs.atlas.mongodb.com/getting-started/) as a parameter in `server/.env`. Make sure you replace the username and password placeholders with your own credentials.
+Set your [Atlas URI connection string](https://docs.atlas.mongodb.com/getting-started/) as a parameter in `server/.env`.
+Make sure you replace the username and password placeholders with your own credentials.
 
 ```
 ATLAS_URI=mongodb+srv://<username>:<password>@sandbox.jadwj.mongodb.net/meanStackExample?retryWrites=true&w=majority
