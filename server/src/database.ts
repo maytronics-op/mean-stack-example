@@ -45,10 +45,11 @@ async function applySchemaValidation(db: mongodb.Db) {
     };
 
     // Try applying the modification to the collection, if the collection doesn't exist, create it 
-   await db.command({
+    await db.command({
         collMod: "employees",
         validator: jsonSchema
-    }).catch(async (error: mongodb.MongoServerError) => {
+    })
+    .catch(async (error: mongodb.MongoServerError) => {
         if (error.codeName === "NamespaceNotFound") {
             await db.createCollection("employees", {validator: jsonSchema});
         }
